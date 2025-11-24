@@ -97,7 +97,7 @@ const translations = {
         "footer.call": "Call: +84 33 980 2255",
         "footer.maps": "Find us on Maps",
         "footer.linkedin": "LinkedIn",
-        "footer.rights": "© 2025 EEG CDSS Egrams Co., Ltd. All rights reserved."
+        "footer.rights": "© 2025 EEG CDSS | Egrams Co., Ltd. All rights reserved."
     },
     vi: {
         "page.title": "EEG CDSS - Nền tảng AI EEG Egrams Co., Ltd",
@@ -116,7 +116,7 @@ const translations = {
         "nav.contact": "Liên hệ",
         "nav.lang_toggle": "EN",
         
-        "hero.title": "Phân tích EEG trong <br><span class=\"hi\">4 phút</span>, thay vì 45",
+        "hero.title": "Báo cáo EEG trong <br><span class=\"hi\">4 phút</span>, thay vì 45",
         "hero.subtitle": "AI EEG với <strong>cảnh báo thời gian thực</strong>, <strong>tường thuật có thể chỉnh sửa</strong>, và tích hợp liền mạch <strong>HIS/PACS + DICOM</strong>.",
         "hero.cta": "XEM VIDEO DEMO",
         
@@ -197,6 +197,6 @@ const translations = {
         "footer.call": "Gọi: +84 33 980 2255",
         "footer.maps": "Tìm trên bản đồ",
         "footer.linkedin": "LinkedIn",
-        "footer.rights": "© 2025 EEG CDSS Egrams Co., Ltd. Bảo lưu mọi quyền."
+        "footer.rights": "© 2025 EEG CDSS | Egrams Co., Ltd. Bảo lưu mọi quyền."
     }
 };
