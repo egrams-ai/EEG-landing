@@ -1,6 +1,22 @@
 class LanguageManager {
     constructor() {
-        this.currentLang = localStorage.getItem('preferredLanguage') || 'en';
+        this.supportedLangs = ['en', 'vi'];
+
+        const queryLang = this.getLangFromQuery();
+        const storedLang = this.getLangFromStorage();
+
+        if (queryLang) {
+            this.initialLangSource = 'query';
+            this.currentLang = queryLang;
+        } else if (storedLang) {
+            this.initialLangSource = 'storage';
+            this.currentLang = storedLang;
+        } else {
+            this.initialLangSource = 'auto';
+            this.currentLang = 'en'; // temporary default, may change after geo lookup
+        }
+        this.canAutoSwitch = this.initialLangSource === 'auto';
+
         this.translations = translations; // Assumes translations is loaded globally
         this.init();
     }
@@ -8,6 +24,58 @@ class LanguageManager {
     init() {
         this.setLanguage(this.currentLang);
         this.updateToggleButton();
+
+        this.detectLanguageByIP();
+    }
+
+    getLangFromQuery() {
+        const params = new URLSearchParams(window.location.search);
+        const langParam = params.get('lang');
+        if (langParam && this.supportedLangs.includes(langParam)) {
+            return langParam;
+        }
+        return null;
+    }
+
+    getLangFromStorage() {
+        const stored = localStorage.getItem('preferredLanguage');
+        if (stored && this.supportedLangs.includes(stored)) {
+            return stored;
+        }
+        return null;
+    }
+
+    updateUrlLangParam(lang) {
+        const params = new URLSearchParams(window.location.search);
+        params.set('lang', lang);
+        const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+        window.history.replaceState({}, '', newUrl);
+    }
+
+    detectLanguageByIP() {
+        fetch('https://ipwho.is/')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch IP info');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const { ip, country, country_code } = data;
+                console.log(`[LanguageManager] IP lookup: ${ip} - ${country} (${country_code})`);
+
+                const desiredLang = country_code === 'VN' ? 'vi' : 'en';
+
+                if (desiredLang !== this.currentLang && this.canAutoSwitch) {
+                    console.log('[LanguageManager] Auto switching language based on IP detection');
+                    this.setLanguage(desiredLang);
+                } else if (!this.canAutoSwitch) {
+                    console.log(`[LanguageManager] Auto switch disabled (source: ${this.initialLangSource}). Current lang: ${this.currentLang}`);
+                }
+            })
+            .catch(error => {
+                console.warn('[LanguageManager] Unable to detect language via IP:', error);
+            });
     }
 
     setLanguage(lang) {
@@ -15,6 +83,7 @@ class LanguageManager {
 
         this.currentLang = lang;
         localStorage.setItem('preferredLanguage', lang);
+        this.updateUrlLangParam(lang);
 
         // Update all elements with data-i18n attribute
         document.querySelectorAll('[data-i18n]').forEach(element => {
