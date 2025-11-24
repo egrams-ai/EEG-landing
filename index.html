@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>egrams - White Neuron AI EEG Platform</title>
-    
+    <title>EEG CDSS - Egram Co., Ltd AI EEG Platform</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="image/egrams-logo-nbg.png">
     <link rel="shortcut icon" type="image/jpeg" href="image/egrams-logo-nbg.png">
     <link rel="apple-touch-icon" href="image/egrams-logo-nbg.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- EEG Background Waves -->
     <div class="eeg-waves-container"></div>
 
     <!-- Preloader -->
-    <div class="mil-preloader"> <div class="mil-preloader-animation"> <div class="mil-pos-abs mil-animation-1"> <p class="mil-h3 mil-muted mil-thin">White Neuron</p> <p class="mil-h3 mil-muted">AI EEG</p> <p class="mil-h3 mil-muted mil-thin">Platform</p> </div> <div class="mil-pos-abs mil-animation-2"> <div class="mil-reveal-frame"> <p class="mil-reveal-box"></p> <p class="mil-h3 mil-muted mil-thin">egrams</p> </div> </div> </div> </div>
-    
+    <div class="mil-preloader">
+        <div class="mil-preloader-animation">
+            <div class="mil-pos-abs mil-animation-1">
+                <p class="mil-h3 mil-muted mil-thin">Egrams</p>
+                <p class="mil-h3 mil-muted">AI EEG</p>
+                <p class="mil-h3 mil-muted mil-thin">Platform</p>
+            </div>
+            <div class="mil-pos-abs mil-animation-2">
+                <div class="mil-reveal-frame">
+                    <p class="mil-reveal-box"></p>
+                    <p class="mil-h3 mil-muted mil-thin" data-i18n="preloader.egrams">EEG CDSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav_wrap" id="mainNav">
         <div class="nav_container">
@@ -37,34 +54,68 @@
                     </button>
                     <div class="nav-menu-2" id="mobileMenu">
                         <a href="#video-demo" class="button_link">
-                            <div class="icon_wrapper"><div class="icon-dot"></div></div>
-                            <div class="button_text">Video Demo</div>
+                            <div class="icon_wrapper">
+                                <div class="icon-dot"></div>
+                            </div>
+                            <div class="button_text" data-i18n="nav.video">Video Demo</div>
                         </a>
                         <a href="#about" class="button_link">
-                            <div class="icon_wrapper"><div class="icon-dot"></div></div>
-                            <div class="button_text">About</div>
+                            <div class="icon_wrapper">
+                                <div class="icon-dot"></div>
+                            </div>
+                            <div class="button_text" data-i18n="nav.about">About</div>
                         </a>
                         <a href="#story" class="button_link">
-                            <div class="icon_wrapper"><div class="icon-dot"></div></div>
-                            <div class="button_text">Our Story</div>
+                            <div class="icon_wrapper">
+                                <div class="icon-dot"></div>
+                            </div>
+                            <div class="button_text" data-i18n="nav.story">Our Story</div>
                         </a>
                         <a href="#impact" class="button_link">
-                            <div class="icon_wrapper"><div class="icon-dot"></div></div>
-                            <div class="button_text">Impact</div>
+                            <div class="icon_wrapper">
+                                <div class="icon-dot"></div>
+                            </div>
+                            <div class="button_text" data-i18n="nav.impact">Impact</div>
                         </a>
                         <a href="#technology" class="button_link">
-                            <div class="icon_wrapper"><div class="icon-dot"></div></div>
-                            <div class="button_text">Technology</div>
+                            <div class="icon_wrapper">
+                                <div class="icon-dot"></div>
+                            </div>
+                            <div class="button_text" data-i18n="nav.technology">Technology</div>
                         </a>
                         <a href="#feedback" class="button_link">
-                            <div class="icon_wrapper"><div class="icon-dot"></div></div>
-                            <div class="button_text">Feedback</div>
+                            <div class="icon_wrapper">
+                                <div class="icon-dot"></div>
+                            </div>
+                            <div class="button_text" data-i18n="nav.feedback">Feedback</div>
                         </a>
                         <!-- <a href="#partners" class="button_link">
                             <div class="icon_wrapper"><div class="icon-dot"></div></div>
                             <div class="button_text">Partners</div>
                         </a> -->
-                        <a href="https://egrams.co" class="contact-us-button">Contact Us</a>
+                        <a href="mailto:contact@egrams.co" class="contact-us-button" data-i18n="nav.contact">Contact Us</a>
+                        <a href="#" id="langToggle" class="lang-toggle" aria-label="Switch language">
+                            <span class="lang-flag" id="langFlag">
+                                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- US Flag -->
+                                    <rect width="24" height="18" fill="#B22234"/>
+                                    <rect y="2" width="24" height="2" fill="#FFFFFF"/>
+                                    <rect y="6" width="24" height="2" fill="#FFFFFF"/>
+                                    <rect y="10" width="24" height="2" fill="#FFFFFF"/>
+                                    <rect y="14" width="24" height="2" fill="#FFFFFF"/>
+                                    <rect x="0" y="0" width="10" height="8" fill="#3C3B6E"/>
+                                    <circle cx="2.5" cy="2" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="5" cy="2" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="7.5" cy="2" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="2.5" cy="4" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="5" cy="4" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="7.5" cy="4" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="2.5" cy="6" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="5" cy="6" r="0.4" fill="#FFFFFF"/>
+                                    <circle cx="7.5" cy="6" r="0.4" fill="#FFFFFF"/>
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -73,7 +124,7 @@
 
     <!-- Main Content -->
     <main class="page_main">
-        
+
         <!-- Hero Section -->
         <div class="container-wrapper" id="hero">
             <div class="page-container">
@@ -83,19 +134,23 @@
                             <div class="line-wrapper">
                                 <div class="line"></div>
                             </div>
-                            <h1 class="hidden-h1">Get EEG Reports in <br><span class="hi">4 Minutes</span>, Not 45</h1>
+                            <h1 class="hidden-h1" data-i18n="hero.title">Get EEG Reports in <br><span class="hi">4
+                                    Minutes</span>, Not 45</h1>
                             <div class="space-small"></div>
-                            <p class="text-body">
-                                AI EEG with <strong>real-time flags</strong>, <strong>editable narratives</strong>, and seamless <strong>HIS/PACS + DICOM</strong> integration.
+                            <p class="text-body" data-i18n="hero.subtitle">
+                                AI EEG with <strong>real-time flags</strong>, <strong>editable narratives</strong>, and
+                                seamless <strong>HIS/PACS + DICOM</strong> integration.
                             </p>
 
                             <div class="space-small"></div>
                             <div style="display: flex; gap: 1rem; flex-wrap: nowrap; align-items: center;">
-                                <a href="#video-demo" class="button-3" style="background: var(--primary); border: 2px solid var(--primary); color: white;">
-                                    <div class="button-3_content-wrap">WATCH VIDEO DEMO</div>
+                                <a href="#video-demo" class="button-3"
+                                    style="background: var(--primary); border: 2px solid var(--primary); color: white;">
+                                    <div class="button-3_content-wrap" data-i18n="hero.cta">WATCH VIDEO DEMO</div>
                                     <div class="button-3_arrow-wrapper">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon points="5 3 19 12 5 21 5 3"/>
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polygon points="5 3 19 12 5 21 5 3" />
                                         </svg>
                                     </div>
                                 </a>
@@ -114,17 +169,17 @@
                 <div class="scroll-down-container">
                     <svg class="scroll-circle-svg" viewBox="0 0 150 150">
                         <defs>
-                            <path id="circlePath" d="M 75, 75 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"/>
+                            <path id="circlePath" d="M 75, 75 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
                         </defs>
                         <text>
-                            <textPath href="#circlePath" startOffset="0">
-                                SCROLL DOWN • SCROLL DOWN • 
+                            <textPath href="#circlePath" startOffset="0" data-i18n="scroll.text">
+                                SCROLL DOWN • SCROLL DOWN •
                             </textPath>
                         </text>
                     </svg>
                     <a href="#video-demo" class="scroll-down-arrow">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <path d="M5 12h14m-6 6l6-6m-6-6l6 6"/>
+                            <path d="M5 12h14m-6 6l6-6m-6-6l6 6" />
                         </svg>
                     </a>
                 </div>
@@ -134,56 +189,56 @@
         <!-- Marquee Section -->
         <section class="marquee_section">
             <div class="marquee_overlay"></div>
-            
+
             <!-- Row 1 - Scroll Left -->
             <div class="marquee_track marquee_track--left">
                 <div class="marquee_inner">
                     <!-- Duplicate 1 -->
-                    <span class="marquee_tag">AI EEG</span>
+                    <span class="marquee_tag" data-i18n="marquee.ai_eeg">AI EEG</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Clinical Reports</span>
+                    <span class="marquee_tag" data-i18n="marquee.clinical_reports">Clinical Reports</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">HIS Integration</span>
+                    <span class="marquee_tag" data-i18n="marquee.his_integration">HIS Integration</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">DICOM</span>
+                    <span class="marquee_tag" data-i18n="marquee.dicom">DICOM</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">4-Minute Turnaround</span>
+                    <span class="marquee_tag" data-i18n="marquee.turnaround">4-Minute Turnaround</span>
                     <span class="marquee_sep">•</span>
 
                     <!-- Duplicate 2 -->
-                    <span class="marquee_tag">AI EEG</span>
+                    <span class="marquee_tag" data-i18n="marquee.ai_eeg">AI EEG</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Clinical Reports</span>
+                    <span class="marquee_tag" data-i18n="marquee.clinical_reports">Clinical Reports</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">HIS Integration</span>
+                    <span class="marquee_tag" data-i18n="marquee.his_integration">HIS Integration</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">DICOM</span>
+                    <span class="marquee_tag" data-i18n="marquee.dicom">DICOM</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">4-Minute Turnaround</span>
+                    <span class="marquee_tag" data-i18n="marquee.turnaround">4-Minute Turnaround</span>
                     <span class="marquee_sep">•</span>
 
                     <!-- Duplicate 3 -->
-                    <span class="marquee_tag">AI EEG</span>
+                    <span class="marquee_tag" data-i18n="marquee.ai_eeg">AI EEG</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Clinical Reports</span>
+                    <span class="marquee_tag" data-i18n="marquee.clinical_reports">Clinical Reports</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">HIS Integration</span>
+                    <span class="marquee_tag" data-i18n="marquee.his_integration">HIS Integration</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">DICOM</span>
+                    <span class="marquee_tag" data-i18n="marquee.dicom">DICOM</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">4-Minute Turnaround</span>
+                    <span class="marquee_tag" data-i18n="marquee.turnaround">4-Minute Turnaround</span>
                     <span class="marquee_sep">•</span>
 
                     <!-- Duplicate 4 -->
-                    <span class="marquee_tag">AI EEG</span>
+                    <span class="marquee_tag" data-i18n="marquee.ai_eeg">AI EEG</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Clinical Reports</span>
+                    <span class="marquee_tag" data-i18n="marquee.clinical_reports">Clinical Reports</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">HIS Integration</span>
+                    <span class="marquee_tag" data-i18n="marquee.his_integration">HIS Integration</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">DICOM</span>
+                    <span class="marquee_tag" data-i18n="marquee.dicom">DICOM</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">4-Minute Turnaround</span>
+                    <span class="marquee_tag" data-i18n="marquee.turnaround">4-Minute Turnaround</span>
                     <span class="marquee_sep">•</span>
                 </div>
             </div>
@@ -192,51 +247,51 @@
             <div class="marquee_track marquee_track--right">
                 <div class="marquee_inner">
                     <!-- Duplicate 1 -->
-                    <span class="marquee_tag">94–98% Accuracy</span>
+                    <span class="marquee_tag" data-i18n="marquee.accuracy">94–98% Accuracy</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Realtime Flags</span>
+                    <span class="marquee_tag" data-i18n="marquee.realtime_flags">Realtime Flags</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Editable Narratives</span>
+                    <span class="marquee_tag" data-i18n="marquee.editable_narratives">Editable Narratives</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Secure APIs</span>
+                    <span class="marquee_tag" data-i18n="marquee.secure_apis">Secure APIs</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">PACS Ready</span>
+                    <span class="marquee_tag" data-i18n="marquee.pacs_ready">PACS Ready</span>
                     <span class="marquee_sep">•</span>
 
                     <!-- Duplicate 2 -->
-                    <span class="marquee_tag">94–98% Accuracy</span>
+                    <span class="marquee_tag" data-i18n="marquee.accuracy">94–98% Accuracy</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Realtime Flags</span>
+                    <span class="marquee_tag" data-i18n="marquee.realtime_flags">Realtime Flags</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Editable Narratives</span>
+                    <span class="marquee_tag" data-i18n="marquee.editable_narratives">Editable Narratives</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Secure APIs</span>
+                    <span class="marquee_tag" data-i18n="marquee.secure_apis">Secure APIs</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">PACS Ready</span>
+                    <span class="marquee_tag" data-i18n="marquee.pacs_ready">PACS Ready</span>
                     <span class="marquee_sep">•</span>
 
                     <!-- Duplicate 3 -->
-                    <span class="marquee_tag">94–98% Accuracy</span>
+                    <span class="marquee_tag" data-i18n="marquee.accuracy">94–98% Accuracy</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Realtime Flags</span>
+                    <span class="marquee_tag" data-i18n="marquee.realtime_flags">Realtime Flags</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Editable Narratives</span>
+                    <span class="marquee_tag" data-i18n="marquee.editable_narratives">Editable Narratives</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Secure APIs</span>
+                    <span class="marquee_tag" data-i18n="marquee.secure_apis">Secure APIs</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">PACS Ready</span>
+                    <span class="marquee_tag" data-i18n="marquee.pacs_ready">PACS Ready</span>
                     <span class="marquee_sep">•</span>
 
                     <!-- Duplicate 4 -->
-                    <span class="marquee_tag">94–98% Accuracy</span>
+                    <span class="marquee_tag" data-i18n="marquee.accuracy">94–98% Accuracy</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Realtime Flags</span>
+                    <span class="marquee_tag" data-i18n="marquee.realtime_flags">Realtime Flags</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Editable Narratives</span>
+                    <span class="marquee_tag" data-i18n="marquee.editable_narratives">Editable Narratives</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">Secure APIs</span>
+                    <span class="marquee_tag" data-i18n="marquee.secure_apis">Secure APIs</span>
                     <span class="marquee_sep">•</span>
-                    <span class="marquee_tag">PACS Ready</span>
+                    <span class="marquee_tag" data-i18n="marquee.pacs_ready">PACS Ready</span>
                     <span class="marquee_sep">•</span>
                 </div>
             </div>
@@ -247,16 +302,16 @@
         <div class="container-wrapper" id="video-demo">
             <div class="page-container">
                 <section class="video-demo-section fade-in-section">
-                    <h2 class="heading-2 blue text-center">Video Demo</h2>
+                    <h2 class="heading-2 blue text-center" data-i18n="video.title">Video Demo</h2>
                     <div class="video-demo-container">
                         <div class="video-wrapper">
-                            <iframe 
-                                id="demoVideo" 
-                                width="100%" 
-                                height="100%" 
-                                src="https://www.youtube.com/embed/udfpYs3HN18?rel=0&modestbranding=1" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            <iframe id="demoVideo" width="100%" height="100%"
+                            
+                                src="https://www.youtube.com/embed/udfpYs3HN18?rel=0&modestbranding=1"
+                                data-video-en="https://www.youtube.com/embed/udfpYs3HN18?rel=0&modestbranding=1"
+                                data-video-vi="https://www.youtube.com/embed/OgqR58Ljy0E?rel=0&modestbranding=1"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>
                         </div>
@@ -272,26 +327,31 @@
                 <section class="fade-in-section">
                     <div class="feature-grid">
                         <div class="hero-left-container">
-                            <h2 class="heading-2 blue">About egrams</h2>
+                            <h2 class="heading-2 blue" data-i18n="about.title">About EEG CDSS</h2>
                             <div class="space-small"></div>
-                            <div class="text-body right">
-                                egrams by White Neuron is an AI EEG platform that streamlines the entire clinical EEG workflow — from signal processing to automated, editable reporting — designed to integrate securely with hospital HIS/PACS and DICOM.
-                                We work with clinicians to deliver faster, more reliable insights for better patient outcomes.
+                            <div class="text-body right" data-i18n="about.text">
+                                EEG CDSS by Egram Co., Ltd is an AI EEG platform that streamlines the entire clinical EEG
+                                workflow — from signal processing to automated, editable reporting — designed to
+                                integrate securely with hospital HIS/PACS and DICOM.
+                                We work with clinicians to deliver faster, more reliable insights for better patient
+                                outcomes.
                             </div>
 
                             <div class="space-small"></div>
                             <a href="#technology" class="button-3">
-                                <div class="button-3_content-wrap">LEARN ABOUT OUR TECH</div>
+                                <div class="button-3_content-wrap" data-i18n="about.cta">LEARN ABOUT OUR TECH</div>
                                 <div class="button-3_arrow-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6"/>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6" />
                                     </svg>
                                 </div>
                             </a>
                         </div>
                         <div class="hero-gif">
-                            <img src="image/Picture5.png" alt="About egrams" loading="lazy">
-                            <p class="image-caption">Built for clinicians: interoperable, secure, and clinically validated EEG AI platform.</p>
+                            <img src="image/Picture5.png" alt="About EEG CDSS" loading="lazy">
+                            <p class="image-caption" data-i18n="about.caption">Built for clinicians: interoperable,
+                                secure, and clinically validated EEG AI platform.</p>
                         </div>
                     </div>
                 </section>
@@ -304,32 +364,40 @@
                 <section class="our-story-section fade-in-section">
                     <div class="feature-grid">
                         <div class="hero-left-container">
-                            <h2 class="heading-2 green">Our Story</h2>
+                            <h2 class="heading-2 green" data-i18n="story.title">Our Story</h2>
                             <div class="space-small"></div>
-                            <div class="text-body right">
-                            EEG is essential yet challenging: manual reviews often take <strong>40–45 minutes</strong> per case,
-                            expert agreement can be just <strong>78–83%</strong>, and data is fragmented across <strong>170,000+</strong> signals
-                            in non-standard formats that are hard to integrate with hospital systems.<br><br>
-                            White Neuron was founded to change this. We built an AI-assisted EEG platform that turns complex signals
-                            into standardized, interoperable insights — <strong>reducing turnaround to ~4 minutes</strong>, improving
-                            accuracy to <strong>94–98%</strong>, and enabling seamless integration with HIS/PACS and automated DICOM conversion.
-                            Our mission is simple: <em>help clinicians make faster, safer decisions for every patient</em>.
+                            <div class="text-body right" data-i18n="story.text">
+                                EEG is essential yet challenging: manual reviews often take <strong>40–45
+                                    minutes</strong> per case,
+                                expert agreement can be just <strong>78–83%</strong>, and data is fragmented across
+                                <strong>170,000+</strong> signals
+                                in non-standard formats that are hard to integrate with hospital systems.<br><br>
+                                Egram Co., Ltd was founded to change this. We built an AI-assisted EEG platform that turns
+                                complex signals
+                                into standardized, interoperable insights — <strong>reducing turnaround to ~4
+                                    minutes</strong>, improving
+                                accuracy to <strong>94–98%</strong>, and enabling seamless integration with HIS/PACS and
+                                automated DICOM conversion.
+                                Our mission is simple: <em>help clinicians make faster, safer decisions for every
+                                    patient</em>.
                             </div>
 
                             <div class="space-small"></div>
                             <a href="#impact" class="button-3">
-                                <div class="button-3_content-wrap">SEE OUR IMPACT</div>
+                                <div class="button-3_content-wrap" data-i18n="story.cta">SEE OUR IMPACT</div>
                                 <div class="button-3_arrow-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6"/>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6" />
                                     </svg>
                                 </div>
                             </a>
                         </div>
                         <div class="hero-gif">
                             <img src="image/our_story.png" alt="Our Story">
-                            <p class="image-caption">
-                                egrams Architecture — Deep learning model analyzing multi-channel EEG signals to detect abnormalities and generate clinical insights in real time.
+                            <p class="image-caption" data-i18n="story.caption">
+                                egrams Architecture — Deep learning model analyzing multi-channel EEG signals to detect
+                                abnormalities and generate clinical insights in real time.
                             </p>
 
                         </div>
@@ -344,33 +412,44 @@
                 <section class="impact-section fade-in-section">
                     <div class="feature-grid">
                         <div class="hero-left-container">
-                            <h2 class="heading-2 orange">Impact</h2>
+                            <h2 class="heading-2 orange" data-i18n="impact.title">Impact</h2>
                             <div class="space-small"></div>
                             <div class="impact-stats-main-wapper">
-                            <div class="impact-stats-wrapper">
-                                <div class="stat-number" style="font-size: 3rem;"><span data-target="4">0</span><span style="font-size:.6em;">&nbsp;min/case</span></div>
-                                <div class="text-body" style="margin:0;">Report turnaround — up to <strong>90% faster</strong> than manual review</div>
-                            </div>
-                            <div class="impact-stats-wrapper">
-                                <div class="stat-number" style="font-size: 3rem;"><span data-target="94">0</span>–<span data-target="98">0</span><span style="font-size:.6em;">&nbsp;%</span></div>
-                                <div class="text-body" style="margin:0;">Clinical-grade accuracy verified in real-world EEG datasets</div>
-                            </div>
-                            <div class="impact-stats-wrapper">
-                                <div class="stat-number" style="font-size: 3rem;"><span data-target="10">0</span><span style="font-size:.6em;">&nbsp;×</span></div>
-                                <div class="text-body" style="margin:0;">More EEG cases processed per day — with the same clinical team</div>
-                            </div>
-                            <div class="impact-stats-wrapper">
-                                <div class="stat-number" style="font-size: 3rem;"><span data-target="100">0</span><span style="font-size:.6em;">&nbsp;%</span></div>
-                                <div class="text-body" style="margin:0;">HIS-ready with <strong>automatic DICOM conversion</strong> and secure APIs</div>
-                            </div>
+                                <div class="impact-stats-wrapper">
+                                    <div class="stat-number" style="font-size: 3rem;"><span
+                                            data-target="4">0</span><span style="font-size:.6em;">&nbsp;min/case</span>
+                                    </div>
+                                    <div class="text-body" style="margin:0;" data-i18n="impact.stat1.text">Report
+                                        turnaround — up to <strong>90% faster</strong> than manual review</div>
+                                </div>
+                                <div class="impact-stats-wrapper">
+                                    <div class="stat-number" style="font-size: 3rem;"><span
+                                            data-target="94">0</span>–<span data-target="98">0</span><span
+                                            style="font-size:.6em;">&nbsp;%</span></div>
+                                    <div class="text-body" style="margin:0;" data-i18n="impact.stat2.text">
+                                        Clinical-grade accuracy verified in real-world EEG datasets</div>
+                                </div>
+                                <div class="impact-stats-wrapper">
+                                    <div class="stat-number" style="font-size: 3rem;"><span
+                                            data-target="10">0</span><span style="font-size:.6em;">&nbsp;×</span></div>
+                                    <div class="text-body" style="margin:0;" data-i18n="impact.stat3.text">More EEG
+                                        cases processed per day — with the same clinical team</div>
+                                </div>
+                                <div class="impact-stats-wrapper">
+                                    <div class="stat-number" style="font-size: 3rem;"><span
+                                            data-target="100">0</span><span style="font-size:.6em;">&nbsp;%</span></div>
+                                    <div class="text-body" style="margin:0;" data-i18n="impact.stat4.text">HIS-ready
+                                        with <strong>automatic DICOM conversion</strong> and secure APIs</div>
+                                </div>
                             </div>
 
                             <div class="space-small"></div>
                             <a href="#technology" class="button-3">
-                                <div class="button-3_content-wrap">EXPLORE OUR TECHNOLOGY</div>
+                                <div class="button-3_content-wrap" data-i18n="impact.cta">EXPLORE OUR TECHNOLOGY</div>
                                 <div class="button-3_arrow-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6"/>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6" />
                                     </svg>
                                 </div>
                             </a>
@@ -378,8 +457,10 @@
                         <!-- <div class="hero-gif">
                             <canvas id="impactCanvas"></canvas>
                         </div> -->
-                        <div class="hero-gif" style="position: relative; display: flex; align-items: center; justify-content: center;">
-                            <video src="video.mp4" autoplay loop muted preload="none" loading="lazy" style="width: 100%; height: auto; border-radius: 20px;"></video>
+                        <div class="hero-gif"
+                            style="position: relative; display: flex; align-items: center; justify-content: center;">
+                            <video src="video.mp4" autoplay loop muted preload="none" loading="lazy"
+                                style="width: 100%; height: auto; border-radius: 20px;"></video>
                         </div>
                     </div>
                 </section>
@@ -392,22 +473,26 @@
                 <section class="our-technology-section fade-in-section">
                     <div class="feature-grid">
                         <div class="hero-left-container">
-                            <h2 class="heading-2 blue">Our Technology</h2>
+                            <h2 class="heading-2 blue" data-i18n="tech.title">Our Technology</h2>
                             <div class="space-small"></div>
-                            
+
                             <!-- Technology Process List -->
                             <div class="tech-process-list">
                                 <div class="tech-step active" data-step="1">
                                     <div class="tech-step-header">
                                         <div class="tech-step-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <circle cx="12" cy="12" r="10"/>
-                                                <path d="M12 6v6l4 2"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <path d="M12 6v6l4 2" />
                                             </svg>
                                         </div>
                                         <div class="tech-step-content">
-                                            <h3 class="tech-step-title">Signal Processing</h3>
-                                            <p class="tech-step-desc">Clean EEG data through band-pass filtering, artifact removal, and normalization — ensuring reliable input for AI analysis.</p>
+                                            <h3 class="tech-step-title" data-i18n="tech.step1.title">Signal Processing
+                                            </h3>
+                                            <p class="tech-step-desc" data-i18n="tech.step1.desc">Clean EEG data through
+                                                band-pass filtering, artifact removal, and normalization — ensuring
+                                                reliable input for AI analysis.</p>
                                         </div>
                                         <div class="tech-step-indicator">
                                             <span class="step-number">01</span>
@@ -418,15 +503,18 @@
                                 <div class="tech-step" data-step="2">
                                     <div class="tech-step-header">
                                         <div class="tech-step-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                                <line x1="9" y1="9" x2="15" y2="15"/>
-                                                <line x1="15" y1="9" x2="9" y2="15"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                                <line x1="9" y1="9" x2="15" y2="15" />
+                                                <line x1="15" y1="9" x2="9" y2="15" />
                                             </svg>
                                         </div>
                                         <div class="tech-step-content">
-                                            <h3 class="tech-step-title">AI Analysis</h3>
-                                            <p class="tech-step-desc">Deep-learning models detect epileptiform discharges and abnormal brain patterns with clinical-grade precision.</p>
+                                            <h3 class="tech-step-title" data-i18n="tech.step2.title">AI Analysis</h3>
+                                            <p class="tech-step-desc" data-i18n="tech.step2.desc">Deep-learning models
+                                                detect epileptiform discharges and abnormal brain patterns with
+                                                clinical-grade precision.</p>
                                         </div>
                                         <div class="tech-step-indicator">
                                             <span class="step-number">02</span>
@@ -437,16 +525,20 @@
                                 <div class="tech-step" data-step="3">
                                     <div class="tech-step-header">
                                         <div class="tech-step-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                                <polyline points="14 2 14 8 20 8"/>
-                                                <line x1="16" y1="13" x2="8" y2="13"/>
-                                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                                <polyline points="14 2 14 8 20 8" />
+                                                <line x1="16" y1="13" x2="8" y2="13" />
+                                                <line x1="16" y1="17" x2="8" y2="17" />
                                             </svg>
                                         </div>
                                         <div class="tech-step-content">
-                                            <h3 class="tech-step-title">Automated Reporting</h3>
-                                            <p class="tech-step-desc">Instant narrative reports generated from AI results — fully editable by clinicians and aligned with medical terminology.</p>
+                                            <h3 class="tech-step-title" data-i18n="tech.step3.title">Automated Reporting
+                                            </h3>
+                                            <p class="tech-step-desc" data-i18n="tech.step3.desc">Instant narrative
+                                                reports generated from AI results — fully editable by clinicians and
+                                                aligned with medical terminology.</p>
                                         </div>
                                         <div class="tech-step-indicator">
                                             <span class="step-number">03</span>
@@ -457,14 +549,19 @@
                                 <div class="tech-step" data-step="4">
                                     <div class="tech-step-header">
                                         <div class="tech-step-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <circle cx="12" cy="12" r="3"/>
-                                                <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.4 4.4l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.4-4.4l4.2-4.2"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3" />
+                                                <path
+                                                    d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.4 4.4l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.4-4.4l4.2-4.2" />
                                             </svg>
                                         </div>
                                         <div class="tech-step-content">
-                                            <h3 class="tech-step-title">System Integration</h3>
-                                            <p class="tech-step-desc">Secure API and DICOM-ready interoperability with HIS/PACS for seamless hospital deployment and data management.</p>
+                                            <h3 class="tech-step-title" data-i18n="tech.step4.title">System Integration
+                                            </h3>
+                                            <p class="tech-step-desc" data-i18n="tech.step4.desc">Secure API and
+                                                DICOM-ready interoperability with HIS/PACS for seamless hospital
+                                                deployment and data management.</p>
                                         </div>
                                         <div class="tech-step-indicator">
                                             <span class="step-number">04</span>
@@ -475,10 +572,11 @@
 
                             <div class="space-small"></div>
                             <a href="#feedback" class="button-3">
-                                <div class="button-3_content-wrap">SEE WHAT OTHERS SAY</div>
+                                <div class="button-3_content-wrap" data-i18n="tech.cta">SEE WHAT OTHERS SAY</div>
                                 <div class="button-3_arrow-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6"/>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14m-6 6l6-6m-6-6l6 6" />
                                     </svg>
                                 </div>
                             </a>
@@ -487,10 +585,14 @@
                         <!-- Technology Image Display -->
                         <div class="hero-gif">
                             <div class="tech-image-display">
-                                <img src="image/Picture1.png" alt="Signal Processing" class="tech-image active" data-step="1" loading="lazy">
-                                <img src="image/Picture2.png" alt="AI Analysis" class="tech-image" data-step="2" loading="lazy">
-                                <img src="image/Picture3.png" alt="Report Generation" class="tech-image" data-step="3" loading="lazy">
-                                <img src="image/Picture4.png" alt="System Integration" class="tech-image" data-step="4" loading="lazy">
+                                <img src="image/Picture1.png" alt="Signal Processing" class="tech-image active"
+                                    data-step="1" loading="lazy">
+                                <img src="image/Picture2.png" alt="AI Analysis" class="tech-image" data-step="2"
+                                    loading="lazy">
+                                <img src="image/Picture3.png" alt="Report Generation" class="tech-image" data-step="3"
+                                    loading="lazy">
+                                <img src="image/Picture4.png" alt="System Integration" class="tech-image" data-step="4"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -505,8 +607,10 @@
                     <div class="feedback-header">
                         <div class="feedback-header-content">
                             <div class="feedback-title-section">
-                                <h2 class="heading-2 blue text-center">Take their word for it</h2>
-                                <p class="feedback-subtitle">Trusted by pioneering AI researchers and medical professionals around the world</p>
+                                <h2 class="heading-2 blue text-center" data-i18n="feedback.title">Take their word for it
+                                </h2>
+                                <p class="feedback-subtitle" data-i18n="feedback.subtitle">Trusted by pioneering AI
+                                    researchers and medical professionals around the world</p>
                             </div>
                             <!-- <div class="feedback-header-link">
                                 <a href="https://whiteneuron.com/testimonials" class="feedback-link-button" target="_blank">
@@ -518,7 +622,7 @@
                             </div> -->
                         </div>
                     </div>
-                    
+
                     <div class="feedback-grid">
                         <!-- Testimonial 1 -->
                         <div class="testimonial-card" data-delay="0">
@@ -528,20 +632,25 @@
                                 </div>
                                 <div class="testimonial-info">
                                     <h4 class="testimonial-name">Dr. Yann LeCun</h4>
-                                    <p class="testimonial-title">Chief AI Scientist at Meta</p>
+                                    <p class="testimonial-title" data-i18n="feedback.t1.title">Chief AI Scientist at Meta</p>
                                 </div>
                                 <div class="testimonial-link">
-                                    <a href="https://linkedin.com/in/yann-lecun" target="_blank" title="View LinkedIn Profile">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                            <rect x="2" y="9" width="4" height="12"/>
-                                            <circle cx="4" cy="4" r="2"/>
+                                    <a href="https://linkedin.com/in/yann-lecun" target="_blank"
+                                        title="View LinkedIn Profile">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                            <rect x="2" y="9" width="4" height="12" />
+                                            <circle cx="4" cy="4" r="2" />
                                         </svg>
                                     </a>
                                 </div>
                             </div>
                             <div class="testimonial-content">
-                                <p>"RF-DETR: DINOV2 pretrained encoder + multiscale DETR architecture = SOTA on fast object detection. The integration with EEG analysis shows remarkable potential for medical AI applications."</p>
+                                <p data-i18n="feedback.t1.text">"RF-DETR: DINOV2 pretrained encoder + multiscale DETR
+                                    architecture = SOTA on fast object detection. The integration with EEG analysis
+                                    shows remarkable potential for medical AI applications."</p>
                             </div>
                         </div>
 
@@ -553,20 +662,25 @@
                                 </div>
                                 <div class="testimonial-info">
                                     <h4 class="testimonial-name">Dr. Nikhila Ravi</h4>
-                                    <p class="testimonial-title">Lead Author of Segment Anything @ Meta</p>
+                                    <p class="testimonial-title" data-i18n="feedback.t2.title">Lead Author of Segment Anything @ Meta</p>
                                 </div>
                                 <div class="testimonial-link">
-                                    <a href="https://linkedin.com/in/nikhila-ravi" target="_blank" title="View LinkedIn Profile">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                            <rect x="2" y="9" width="4" height="12"/>
-                                            <circle cx="4" cy="4" r="2"/>
+                                    <a href="https://linkedin.com/in/nikhila-ravi" target="_blank"
+                                        title="View LinkedIn Profile">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                            <rect x="2" y="9" width="4" height="12" />
+                                            <circle cx="4" cy="4" r="2" />
                                         </svg>
                                     </a>
                                 </div>
                             </div>
                             <div class="testimonial-content">
-                                <p>"The right UX is key! Love how egrams has adapted advanced AI interface to maximize utility and efficiency in clinical EEG analysis workflows."</p>
+                                <p data-i18n="feedback.t2.text">"The right UX is key! Love how EEG CDSS has adapted
+                                    advanced AI interface to maximize utility and efficiency in clinical EEG analysis
+                                    workflows."</p>
                             </div>
                         </div>
 
@@ -578,20 +692,25 @@
                                 </div>
                                 <div class="testimonial-info">
                                     <h4 class="testimonial-name">Amjad Masad</h4>
-                                    <p class="testimonial-title">CEO of Replit</p>
+                                    <p class="testimonial-title" data-i18n="feedback.t3.title">CEO of Replit</p>
                                 </div>
                                 <div class="testimonial-link">
-                                    <a href="https://linkedin.com/in/amjadmasad" target="_blank" title="View LinkedIn Profile">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                            <rect x="2" y="9" width="4" height="12"/>
-                                            <circle cx="4" cy="4" r="2"/>
+                                    <a href="https://linkedin.com/in/amjadmasad" target="_blank"
+                                        title="View LinkedIn Profile">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                            <rect x="2" y="9" width="4" height="12" />
+                                            <circle cx="4" cy="4" r="2" />
                                         </svg>
                                     </a>
                                 </div>
                             </div>
                             <div class="testimonial-content">
-                                <p>"Software is eating the world but it still can't see it. egrams is the vision layer for medical software—one that is loved by healthcare professionals!"</p>
+                                <p data-i18n="feedback.t3.text">"Software is eating the world but it still can't see it.
+                                    EEG CDSS is the vision layer for medical software—one that is loved by healthcare
+                                    professionals!"</p>
                             </div>
                         </div>
 
@@ -603,7 +722,7 @@
                                 </div>
                                 <div class="testimonial-info">
                                     <h4 class="testimonial-name">Beyang Liu</h4>
-                                    <p class="testimonial-title">CTO of Sourcegraph</p>
+                                    <p class="testimonial-title" data-i18n="feedback.t4.title">CTO of Sourcegraph</p>
                                 </div>
                                 <div class="testimonial-link">
                                     <a href="https://linkedin.com/in/beyang" target="_blank" title="View LinkedIn Profile">
@@ -615,8 +734,8 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="testimonial-content">
-                                <p>"A lot of people have noted a gap between what AI seems capable of doing in demos and what they're able to get in real-world settings. egrams bridges that gap for medical professionals."</p>
+                            <div class="testimonial-content" data-i18n="feedback.t4.text">
+                                <p>"A lot of people have noted a gap between what AI seems capable of doing in demos and what they're able to get in real-world settings. EEG CDSS bridges that gap for medical professionals."</p>
                             </div>
                         </div>
 
@@ -628,7 +747,7 @@
                                 </div>
                                 <div class="testimonial-info">
                                     <h4 class="testimonial-name">Antaripa Saha</h4>
-                                    <p class="testimonial-title">ML Engineer</p>
+                                    <p class="testimonial-title" data-i18n="feedback.t5.title">ML Engineer</p>
                                 </div>
                                 <div class="testimonial-link">
                                     <a href="https://linkedin.com/in/antaripa-saha" target="_blank" title="View LinkedIn Profile">
@@ -641,7 +760,7 @@
                                 </div>
                             </div>
                             <div class="testimonial-content">
-                                <p>"egrams platform is such a resource-intense place to learn AI for medical applications. For people who want to get more in-depth into computer vision and do hands-on work, this is the solution."</p>
+                                <p data-i18n="feedback.t5.text">"EEG CDSS platform is such a resource-intense place to learn AI for medical applications. For people who want to get more in-depth into computer vision and do hands-on work, this is the solution."</p>
                             </div>
                         </div>
 
@@ -653,7 +772,7 @@
                                 </div>
                                 <div class="testimonial-info">
                                     <h4 class="testimonial-name">Asim Ghanchi</h4>
-                                    <p class="testimonial-title">Assistant Vice President, Technology Services at BNSF</p>
+                                    <p class="testimonial-title" data-i18n="feedback.t6.title">Assistant Vice President, Technology Services at BNSF</p>
                                 </div>
                                 <div class="testimonial-link">
                                     <a href="https://linkedin.com/in/asim-ghanchi" target="_blank" title="View LinkedIn Profile">
@@ -666,7 +785,7 @@
                                 </div>
                             </div>
                             <div class="testimonial-content">
-                                <p>"Technological advances are essential for healthcare to maintain its leadership. egrams is helping us immediately realize value from state-of-the-art computer vision technology in medical applications."</p>
+                                <p data-i18n="feedback.t6.text">"Technological advances are essential for healthcare to maintain its leadership. EEG CDSS is helping us immediately realize value from state-of-the-art computer vision technology in medical applications."</p>
                             </div>
                         </div>
                     </div>
@@ -680,11 +799,11 @@
     <footer>
         <div class="uui-footer01_top-wrapper">
             <div class="uui-footer01_left-wrapper">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">egrams</h3>
-                <p style="color: #999;">Advancing brain research through AI and neuroscience</p>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">EEG CDSS</h3>
+                <p style="color: #999;" data-i18n="footer.desc">Advancing brain research through AI and neuroscience</p>
                 <div style="margin-top: 1rem; color: #bbb; line-height: 1.6;">
-                    <div>White Neuron</div>
-                    <div>LK333 DV08 Dia Lao Area, Mau Luong Urban Area, Kien Hung Ward, Hanoi, Vietnam</div>
+                    <div data-i18n="footer.company">Egram Co., Ltd</div>
+                    <div data-i18n="footer.address">LK333 DV08 Dia Lao Area, Mau Luong Urban Area, Kien Hung Ward, Hanoi, Vietnam</div>
                 </div>
                 <div style="margin-top: 1.25rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items:center;">
                     <a href="mailto:contact@egrams.co" style="color: #ff8c42; text-decoration: none;">contact@egrams.co</a>
@@ -705,307 +824,285 @@
             </div>
             <div class="uui-footer01_menu-wrapper">
                     <div class="uui-footer01_link-list">
-                        <div class="uui-footer01_link-list-heading">Sections</div>
-                        <a href="#about" class="uui-footer01_link">About</a>
-                        <a href="#video-demo" class="uui-footer01_link">Video Demo</a>
-                        <a href="#story" class="uui-footer01_link">Our Story</a>
-                        <a href="#impact" class="uui-footer01_link">Impact</a>
-                        <a href="#technology" class="uui-footer01_link">Technology</a>
-                        <a href="#feedback" class="uui-footer01_link">Feedback</a>
+                        <div class="uui-footer01_link-list-heading" data-i18n="footer.sections">Sections</div>
+                        <a href="#about" class="uui-footer01_link" data-i18n="footer.about">About</a>
+                        <a href="#video-demo" class="uui-footer01_link" data-i18n="footer.video-demo">Video Demo</a>
+                        <a href="#story" class="uui-footer01_link" data-i18n="footer.story">Our Story</a>
+                        <a href="#impact" class="uui-footer01_link" data-i18n="footer.impact">Impact</a>
+                        <a href="#technology" class="uui-footer01_link" data-i18n="footer.technology">Technology</a>
+                        <a href="#feedback" class="uui-footer01_link" data-i18n="footer.feedback">Feedback</a>
                     </div>
                     <div class="uui-footer01_link-list">
-                        <div class="uui-footer01_link-list-heading">Resources</div>
-                        <a href="https://www.youtube.com/embed/CrtB-Tb-J_o?rel=0&modestbranding=1" class="uui-footer01_link">Video Demo</a>
+                        <div class="uui-footer01_link-list-heading" data-i18n="footer.resources">Resources</div>
+                        <a href="https://www.youtube.com/embed/CrtB-Tb-J_o?rel=0&modestbranding=1" class="uui-footer01_link" data-i18n="footer.resources.video_demo">Video Demo</a>
                         <!-- <a href="../docs/broucher-eeg.pdf" class="uui-footer01_link" target="_blank" rel="noopener">Product Brochure</a> -->
-                        <a href="https://egrams.co" class="uui-footer01_link" target="_blank" rel="noopener">Testimonials</a>
-                        <a href="https://egrams.co" class="uui-footer01_link" target="_blank" rel="noopener">Company Site</a>
+                        <a href="https://egrams.co" class="uui-footer01_link" target="_blank" rel="noopener" data-i18n="footer.resources.testimonials">Testimonials</a>
+                        <a href="https://egrams.co" class="uui-footer01_link" target="_blank" rel="noopener" data-i18n="footer.resources.company_site">Company Site</a>
                     </div>
                     <div class="uui-footer01_link-list">
-                        <div class="uui-footer01_link-list-heading">Contact</div>
-                        <a href="mailto:contact@egrams.co" class="uui-footer01_link">Email Us</a>
-                        <a href="tel:+84339802255" class="uui-footer01_link">Call: +84 33 980 2255</a>
-                        <a href="https://maps.app.goo.gl/g1hzcexctadfBBtR6" target="_blank" rel="noopener" class="uui-footer01_link">Find us on Maps</a>
-                        <a href="https://www.linkedin.com/company/whiteneuron" target="_blank" rel="noopener" class="uui-footer01_link">LinkedIn</a>
+                        <div class="uui-footer01_link-list-heading" data-i18n="footer.contact">Contact</div>
+                        <a href="mailto:contact@egrams.co" class="uui-footer01_link" data-i18n="footer.email">Email Us</a>
+                        <a href="tel:+84339802255" class="uui-footer01_link" data-i18n="footer.call">Call: +84 33 980 2255</a>
+                        <a href="https://maps.app.goo.gl/g1hzcexctadfBBtR6" target="_blank" rel="noopener" class="uui-footer01_link" data-i18n="footer.maps">Find us on Maps</a>
+                        <a href="https://www.linkedin.com/company/whiteneuron" target="_blank" rel="noopener" class="uui-footer01_link" data-i18n="footer.linkedin">LinkedIn</a>
                     </div>
             </div>
         </div>
-        <div class="uui-footer01_bottom-wrapper">
-            © 2025 egrams White Neuron. All rights reserved.
+        <div class="uui-footer01_bottom-wrapper" data-i18n="footer.rights">
+            © 2025 EEG CDSS | Egram Co., Ltd. All rights reserved.
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="eeg-waves.js"></script>
-    <script src="main.js"></script>
-    <script>
-        // Initialize EEG Waveform Animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const eegCanvas = new EEGWaveform('eegWaveCanvas', {
-                channels: 16,
-                waveSpeed: 2,
-                amplitude: 20,
-                frequency: 0.02,
-                gridColor: 'rgba(0, 179, 199, 0.15)',
-                waveColor: '#00B3C7',
-                backgroundColor: '#0a0a0a',
-                showGrid: true,
-                showLabels: true,
-                spikeChance: 0.005
-            });
-        });
-        
-        // Initialize Fancybox with full features
-        Fancybox.bind("[data-fancybox]", {
-            // Enable zoom
-            Images: {
-                zoom: true,
-                click: "toggleZoom",
-                wheel: "zoom",
-                protected: false,
-            },
-            // Thumbnails
-            Thumbs: {
-                autoStart: true,
-                axis: 'x',
-            },
-            // Toolbar with zoom buttons
-            Toolbar: {
-                display: {
-                    left: ["infobar"],
-                    middle: ["zoomIn", "zoomOut", "toggle1to1", "rotateCCW", "rotateCW", "flipX", "flipY"],
-                    right: ["slideshow", "thumbs", "download", "close"],
-                },
-            },
-            // Animation
-            animated: true,
-            showClass: "f-fadeIn",
-            hideClass: "f-fadeOut",
-            // Slideshow
-            Slideshow: {
-                playOnStart: false,
-                timeout: 3000,
-            },
-            // Touch gestures
-            Panzoom: {
-                touch: true,
-                click: "toggleZoom",
-                wheel: "zoom",
-                maxScale: 5,
-            },
-        });
-    </script>
-    <script>
-        // EEG Spike Effects - Random neural spikes (subtle)
-        function createEEGSpike() {
-            const container = document.querySelector('.eeg-waves-container');
-            if (!container) return;
-            
-            const spike = document.createElement('div');
-            spike.className = 'eeg-spike';
-            
-            // Random position
-            spike.style.left = Math.random() * 100 + '%';
-            spike.style.top = Math.random() * 100 + '%';
-            
-            // Random color from our palette (more subtle)
-            const colors = ['#00B3C7', '#6B6BFF', '#FF8C42', '#B7F171'];
-            const color = colors[Math.floor(Math.random() * colors.length)];
-            spike.style.background = `linear-gradient(180deg, transparent, ${color}, transparent)`;
-            
-            // Random animation delay
-            spike.style.animationDelay = Math.random() * 2 + 's';
-            
-            container.appendChild(spike);
-            
-            // Remove after animation
-            setTimeout(() => spike.remove(), 4000);
-        }
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+                                <script src="translations.js"></script>
+                                <script src="language.js"></script>
+                                <script src="eeg-waves.js"></script>
+                                <script src="main.js"></script>
+                                <script>
+                                    // Initialize EEG Waveform Animation
+                                    document.addEventListener('DOMContentLoaded', () => {
+                                        const eegCanvas = new EEGWaveform('eegWaveCanvas', {
+                                            channels: 16,
+                                            waveSpeed: 2,
+                                            amplitude: 20,
+                                            frequency: 0.02,
+                                            gridColor: 'rgba(0, 179, 199, 0.15)',
+                                            waveColor: '#00B3C7',
+                                            backgroundColor: '#0a0a0a',
+                                            showGrid: true,
+                                            showLabels: true,
+                                            spikeChance: 0.005
+                                        });
+                                    });
 
-        // Create spikes less frequently (every 3.5 seconds)
-        setInterval(createEEGSpike, 3500);
+                                    // Initialize Fancybox with full features
+                                    Fancybox.bind("[data-fancybox]", {
+                                        // Enable zoom
+                                        Images: {
+                                            zoom: true,
+                                            click: "toggleZoom",
+                                            wheel: "zoom",
+                                            protected: false,
+                                        },
+                                        // Thumbnails
+                                        Thumbs: {
+                                            autoStart: true,
+                                            axis: 'x',
+                                        },
+                                        // Toolbar with zoom buttons
+                                        Toolbar: {
+                                            display: {
+                                                left: ["infobar"],
+                                                middle: ["zoomIn", "zoomOut", "toggle1to1", "rotateCCW", "rotateCW", "flipX", "flipY"],
+                                                right: ["slideshow", "thumbs", "download", "close"],
+                                            },
+                                        },
+                                        // Animation
+                                        animated: true,
+                                        showClass: "f-fadeIn",
+                                        hideClass: "f-fadeOut",
+                                        // Slideshow
+                                        Slideshow: {
+                                            playOnStart: false,
+                                            timeout: 3000,
+                                        },
+                                        // Touch gestures
+                                        Panzoom: {
+                                            touch: true,
+                                            click: "toggleZoom",
+                                            wheel: "zoom",
+                                            maxScale: 5,
+                                        },
+                                    });
+                                </script>
+                                <script>
+                                    // EEG Spike Effects - Random neural spikes (subtle)
+                                    function createEEGSpike() {
+                                        const container = document.querySelector('.eeg-waves-container');
+                                        if (!container) return;
 
-        // Scroll effects
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('mainNav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
+                                        const spike = document.createElement('div');
+                                        spike.className = 'eeg-spike';
 
-        // Intersection Observer for fade-in animations
-        const fadeInObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    
-                    // Animate numbers when impact section comes into view
-                    if (entry.target.classList.contains('impact-section')) {
-                        animateNumbers();
-                    }
-                }
-            });
-        }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -100px 0px'
-        });
+                                        // Random position
+                                        spike.style.left = Math.random() * 100 + '%';
+                                        spike.style.top = Math.random() * 100 + '%';
 
-        document.querySelectorAll('.fade-in-section').forEach(section => {
-            fadeInObserver.observe(section);
-        });
+                                        // Random color from our palette (more subtle)
+                                        const colors = ['#00B3C7', '#6B6BFF', '#FF8C42', '#B7F171'];
+                                        const color = colors[Math.floor(Math.random() * colors.length)];
+                                        spike.style.background = `linear-gradient(180deg, transparent, ${color}, transparent)`;
 
-        // Animate counting numbers
-        function animateNumbers() {
-            const counters = document.querySelectorAll('[data-target]');
-            
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const duration = 2000; // 2 seconds
-                const increment = target / (duration / 16); // 60fps
-                let current = 0;
-                
-                const updateCounter = () => {
-                    current += increment;
-                    if (current < target) {
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
+                                        // Random animation delay
+                                        spike.style.animationDelay = Math.random() * 2 + 's';
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+                                        container.appendChild(spike);
 
-        // Parallax effect for canvas - DISABLED (canvas stays fixed)
-        /*
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroCanvases = document.querySelectorAll('#hero .retro-tv-wrapper');
-            heroCanvases.forEach((canvas, index) => {
-                const speed = 0.3 + (index * 0.1);
-                canvas.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
-        */
-    </script>
-    
-    <!-- GSAP Library for Preloader Animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script>
-        // Preloader Animation
-        window.addEventListener('load', function() {
-            var timeline = gsap.timeline();
-            
-            timeline.to(".mil-preloader-animation", {
-                opacity: 1,
-            });
-            
-            timeline.fromTo(
-                ".mil-animation-1 .mil-h3",
-                {
-                    y: "30px",
-                    opacity: 0,
-                },
-                {
-                    y: "0px",
-                    opacity: 1,
-                    stagger: 0.4,
-                }
-            );
-            
-            timeline.to(
-                ".mil-animation-1 .mil-h3",
-                {
-                    opacity: 0,
-                    y: "-30",
-                },
-                "+=.3"
-            );
-            
-            timeline.fromTo(
-                ".mil-reveal-box",
-                0.1,
-                {
-                    opacity: 0,
-                },
-                {
-                    opacity: 1,
-                    x: "-30",
-                }
-            );
-            
-            timeline.to(
-                ".mil-reveal-box",
-                0.45,
-                {
-                    width: "100%",
-                    x: 0,
-                },
-                "+=.1"
-            );
-            
-            timeline.to(".mil-reveal-box", {
-                right: "0",
-            });
-            
-            timeline.to(".mil-reveal-box", 0.3, {
-                width: "0%",
-            });
-            
-            timeline.fromTo(
-                ".mil-animation-2 .mil-h3",
-                {
-                    opacity: 0,
-                },
-                {
-                    opacity: 1,
-                },
-                "-=.5"
-            );
-            
-            timeline.to(
-                ".mil-animation-2 .mil-h3",
-                0.6,
-                {
-                    opacity: 0,
-                    y: "-30",
-                },
-                "+=.5"
-            );
-            
-            timeline.to(
-                ".mil-preloader",
-                0.8,
-                {
-                    opacity: 0,
-                    ease: "sine",
-                },
-                "+=.2"
-            );
-            
-            timeline.to(".mil-preloader", {
-                onComplete: function () {
-                    document.querySelector('.mil-preloader').classList.add('mil-hidden');
-                },
-            });
-        });
-    </script>
+                                        // Remove after animation
+                                        setTimeout(() => spike.remove(), 4000);
+                                    }
+
+                                    // Create spikes less frequently (every 3.5 seconds)
+                                    setInterval(createEEGSpike, 3500);
+
+                                    // Scroll effects
+                                    window.addEventListener('scroll', () => {
+                                        const nav = document.getElementById('mainNav');
+                                        if (window.scrollY > 50) {
+                                            nav.classList.add('scrolled');
+                                        } else {
+                                            nav.classList.remove('scrolled');
+                                        }
+                                    });
+
+                                    // Intersection Observer for fade-in animations
+                                    const fadeInObserver = new IntersectionObserver((entries) => {
+                                        entries.forEach(entry => {
+                                            if (entry.isIntersecting) {
+                                                entry.target.classList.add('is-visible');
+
+                                                // Animate numbers when impact section comes into view
+                                                if (entry.target.classList.contains('impact-section')) {
+                                                    animateNumbers();
+                                                }
+                                            }
+                                        });
+                                    }, {
+                                        threshold: 0.15,
+                                        rootMargin: '0px 0px -100px 0px'
+                                    });
+
+                                    document.querySelectorAll('.fade-in-section').forEach(section => {
+                                        fadeInObserver.observe(section);
+                                    });
+
+                                    // Animate counting numbers
+                                    function animateNumbers() {
+                                        const counters = document.querySelectorAll('[data-target]');
+
+                                        counters.forEach(counter => {
+                                            const target = parseInt(counter.getAttribute('data-target'));
+                                            const duration = 2000; // 2 seconds
+                                            const increment = target / (duration / 16); // 60fps
+                                            let current = 0;
+
+                                            const updateCounter = () => {
+                                                current += increment;
+                                                if (current < target) {
+                                                    counter.textContent = Math.floor(current);
+                                                    requestAnimationFrame(updateCounter);
+                                                } else {
+                                                    counter.textContent = target;
+                                                }
+                                            };
+
+                                            updateCounter();
+                                        });
+                                    }
+                                </script>
+
+                                <!-- GSAP Library for Preloader Animation -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+                                <script>
+                                    // Preloader Animation
+                                    window.addEventListener('load', function () {
+                                        var timeline = gsap.timeline();
+
+                                        timeline.to(".mil-preloader-animation", {
+                                            opacity: 1,
+                                        });
+
+                                        timeline.fromTo(
+                                            ".mil-animation-1 .mil-h3",
+                                            {
+                                                y: "30px",
+                                                opacity: 0,
+                                            },
+                                            {
+                                                y: "0px",
+                                                opacity: 1,
+                                                stagger: 0.4,
+                                            }
+                                        );
+
+                                        timeline.to(
+                                            ".mil-animation-1 .mil-h3",
+                                            {
+                                                opacity: 0,
+                                                y: "-30",
+                                            },
+                                            "+=.3"
+                                        );
+
+                                        timeline.fromTo(
+                                            ".mil-reveal-box",
+                                            0.1,
+                                            {
+                                                opacity: 0,
+                                            },
+                                            {
+                                                opacity: 1,
+                                                x: "-30",
+                                            }
+                                        );
+
+                                        timeline.to(
+                                            ".mil-reveal-box",
+                                            0.45,
+                                            {
+                                                width: "100%",
+                                                x: 0,
+                                            },
+                                            "+=.1"
+                                        );
+
+                                        timeline.to(".mil-reveal-box", {
+                                            right: "0",
+                                        });
+
+                                        timeline.to(".mil-reveal-box", 0.3, {
+                                            width: "0%",
+                                        });
+
+                                        timeline.fromTo(
+                                            ".mil-animation-2 .mil-h3",
+                                            {
+                                                opacity: 0,
+                                            },
+                                            {
+                                                opacity: 1,
+                                            },
+                                            "-=.5"
+                                        );
+
+                                        timeline.to(
+                                            ".mil-animation-2 .mil-h3",
+                                            0.6,
+                                            {
+                                                opacity: 0,
+                                                y: "-30",
+                                            },
+                                            "+=.5"
+                                        );
+
+                                        timeline.to(
+                                            ".mil-preloader",
+                                            0.8,
+                                            {
+                                                opacity: 0,
+                                                ease: "sine",
+                                            },
+                                            "+=.2"
+                                        );
+
+                                        timeline.to(".mil-preloader", {
+                                            onComplete: function () {
+                                                document.querySelector('.mil-preloader').classList.add('mil-hidden');
+                                            },
+                                        });
+                                    });
+                                </script>
 </body>
+
 </html>
