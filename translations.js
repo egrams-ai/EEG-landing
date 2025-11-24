@@ -1,11 +1,11 @@
 const translations = {
     en: {
-        "page.title": "egrams - Egrams Co., Ltd AI EEG Platform",
+        "page.title": "EEG CDSS - Egrams Co., Ltd AI EEG Platform",
         
         "preloader.white_neuron": "Egrams Co., Ltd",
         "preloader.ai_eeg": "AI EEG",
         "preloader.platform": "Platform",
-        "preloader.egrams": "egrams",
+        "preloader.EEG CDSS": "EEG CDSS",
         
         "nav.video": "Video Demo",
         "nav.about": "About",
@@ -35,15 +35,15 @@ const translations = {
         
         "video.title": "Video Demo",
         
-        "about.title": "About egrams",
-        "about.text": "egrams by Egrams Co., Ltd is an AI EEG platform that streamlines the entire clinical EEG workflow — from signal processing to automated, editable reporting — designed to integrate securely with hospital HIS/PACS and DICOM. We work with clinicians to deliver faster, more reliable insights for better patient outcomes.",
+        "about.title": "About EEG CDSS",
+        "about.text": "EEG CDSS by Egrams Co., Ltd is an AI EEG platform that streamlines the entire clinical EEG workflow — from signal processing to automated, editable reporting — designed to integrate securely with hospital HIS/PACS and DICOM. We work with clinicians to deliver faster, more reliable insights for better patient outcomes.",
         "about.cta": "LEARN ABOUT OUR TECH",
         "about.caption": "Built for clinicians: interoperable, secure, and clinically validated EEG AI platform.",
         
         "story.title": "Our Story",
         "story.text": "EEG is essential yet challenging: manual reviews often take <strong>40–45 minutes</strong> per case, expert agreement can be just <strong>78–83%</strong>, and data is fragmented across <strong>170,000+</strong> signals in non-standard formats that are hard to integrate with hospital systems.<br><br>Egrams Co., Ltd was founded to change this. We built an AI-assisted EEG platform that turns complex signals into standardized, interoperable insights — <strong>reducing turnaround to ~4 minutes</strong>, improving accuracy to <strong>94–98%</strong>, and enabling seamless integration with HIS/PACS and automated DICOM conversion. Our mission is simple: <em>help clinicians make faster, safer decisions for every patient</em>.",
         "story.cta": "SEE OUR IMPACT",
-        "story.caption": "egrams Architecture — Deep learning model analyzing multi-channel EEG signals to detect abnormalities and generate clinical insights in real time.",
+        "story.caption": "EEG CDSS Architecture — Deep learning model analyzing multi-channel EEG signals to detect abnormalities and generate clinical insights in real time.",
         
         "impact.title": "Impact",
         "impact.stat1.text": "Report turnaround — up to <strong>90% faster</strong> than manual review",
@@ -67,15 +67,15 @@ const translations = {
         "feedback.subtitle": "Trusted by pioneering AI researchers and medical professionals around the world",
         "feedback.t1.text": "\"RF-DETR: DINOV2 pretrained encoder + multiscale DETR architecture = SOTA on fast object detection. The integration with EEG analysis shows remarkable potential for medical AI applications.\"",
         "feedback.t1.title": "Chief AI Scientist at Meta",
-        "feedback.t2.text": "\"The right UX is key! Love how egrams has adapted advanced AI interface to maximize utility and efficiency in clinical EEG analysis workflows.\"",
+        "feedback.t2.text": "\"The right UX is key! Love how EEG CDSS has adapted advanced AI interface to maximize utility and efficiency in clinical EEG analysis workflows.\"",
         "feedback.t2.title": "Lead Author of Segment Anything @ Meta",
-        "feedback.t3.text": "\"Software is eating the world but it still can't see it. egrams is the vision layer for medical software—one that is loved by healthcare professionals!\"",
+        "feedback.t3.text": "\"Software is eating the world but it still can't see it. EEG CDSS is the vision layer for medical software—one that is loved by healthcare professionals!\"",
         "feedback.t3.title": "CEO of Replit",
-        "feedback.t4.text": "\"A lot of people have noted a gap between what AI seems capable of doing in demos and what they're able to get in real-world settings. egrams bridges that gap for medical professionals.\"",
+        "feedback.t4.text": "\"A lot of people have noted a gap between what AI seems capable of doing in demos and what they're able to get in real-world settings. EEG CDSS bridges that gap for medical professionals.\"",
         "feedback.t4.title": "CTO of Sourcegraph",
-        "feedback.t5.text": "\"egrams platform is such a resource-intense place to learn AI for medical applications. For people who want to get more in-depth into computer vision and do hands-on work, this is the solution.\"",
+        "feedback.t5.text": "\"EEG CDSS platform is such a resource-intense place to learn AI for medical applications. For people who want to get more in-depth into computer vision and do hands-on work, this is the solution.\"",
         "feedback.t5.title": "ML Engineer",
-        "feedback.t6.text": "\"Technological advances are essential for healthcare to maintain its leadership. egrams is helping us immediately realize value from state-of-the-art computer vision technology in medical applications.\"",
+        "feedback.t6.text": "\"Technological advances are essential for healthcare to maintain its leadership. EEG CDSS is helping us immediately realize value from state-of-the-art computer vision technology in medical applications.\"",
         "feedback.t6.title": "Assistant Vice President, Technology Services at BNSF",
         
         "footer.desc": "Advancing brain research through AI and neuroscience",
@@ -97,15 +97,15 @@ const translations = {
         "footer.call": "Call: +84 33 980 2255",
         "footer.maps": "Find us on Maps",
         "footer.linkedin": "LinkedIn",
-        "footer.rights": "© 2025 egrams Egrams Co., Ltd. All rights reserved."
+        "footer.rights": "© 2025 EEG CDSS Egrams Co., Ltd. All rights reserved."
     },
     vi: {
-        "page.title": "egrams - Nền tảng AI EEG Egrams Co., Ltd",
+        "page.title": "EEG CDSS - Nền tảng AI EEG Egrams Co., Ltd",
         
         "preloader.white_neuron": "Egrams Co., Ltd",
         "preloader.ai_eeg": "AI EEG",
         "preloader.platform": "Nền tảng",
-        "preloader.egrams": "egrams",
+        "preloader.egrams": "EEG CDSS",
         
         "nav.video": "Video Demo",
         "nav.about": "Về chúng tôi",
@@ -116,7 +116,7 @@ const translations = {
         "nav.contact": "Liên hệ",
         "nav.lang_toggle": "EN",
         
-        "hero.title": "Nhận báo cáo EEG trong <br><span class=\"hi\">4 phút</span>, thay vì 45",
+        "hero.title": "Phân tích EEG trong <br><span class=\"hi\">4 phút</span>, thay vì 45",
         "hero.subtitle": "AI EEG với <strong>cảnh báo thời gian thực</strong>, <strong>tường thuật có thể chỉnh sửa</strong>, và tích hợp liền mạch <strong>HIS/PACS + DICOM</strong>.",
         "hero.cta": "XEM VIDEO DEMO",
         
@@ -135,15 +135,15 @@ const translations = {
         
         "video.title": "Video Demo",
         
-        "about.title": "Về egrams",
-        "about.text": "egrams bởi Egrams Co., Ltd là nền tảng AI EEG giúp tối ưu hóa toàn bộ quy trình EEG lâm sàng — từ xử lý tín hiệu đến báo cáo tự động có thể chỉnh sửa — được thiết kế để tích hợp bảo mật với hệ thống HIS/PACS và DICOM của bệnh viện. Chúng tôi hợp tác với các bác sĩ lâm sàng để cung cấp thông tin chi tiết nhanh hơn, đáng tin cậy hơn cho kết quả bệnh nhân tốt hơn.",
+        "about.title": "Về EEG CDSS",
+        "about.text": "EEG CDSS bởi Egrams Co., Ltd là nền tảng AI EEG giúp tối ưu hóa toàn bộ quy trình EEG lâm sàng — từ xử lý tín hiệu đến báo cáo tự động có thể chỉnh sửa — được thiết kế để tích hợp bảo mật với hệ thống HIS/PACS và DICOM của bệnh viện. Chúng tôi hợp tác với các bác sĩ lâm sàng để cung cấp thông tin chi tiết nhanh hơn, đáng tin cậy hơn cho kết quả bệnh nhân tốt hơn.",
         "about.cta": "TÌM HIỂU CÔNG NGHỆ",
         "about.caption": "Xây dựng cho bác sĩ lâm sàng: nền tảng AI EEG tương thích, bảo mật và được kiểm chứng lâm sàng.",
         
         "story.title": "Câu chuyện của chúng tôi",
         "story.text": "EEG rất cần thiết nhưng đầy thách thức: đánh giá thủ công thường mất <strong>40–45 phút</strong> mỗi ca, sự đồng thuận của chuyên gia chỉ đạt <strong>78–83%</strong>, và dữ liệu bị phân mảnh trên <strong>170,000+</strong> tín hiệu ở các định dạng không chuẩn khó tích hợp với hệ thống bệnh viện.<br><br>Egrams Co., Ltd được thành lập để thay đổi điều này. Chúng tôi xây dựng nền tảng EEG hỗ trợ AI biến các tín hiệu phức tạp thành thông tin chi tiết chuẩn hóa, tương thích — <strong>giảm thời gian xuống ~4 phút</strong>, cải thiện độ chính xác lên <strong>94–98%</strong>, và cho phép tích hợp liền mạch với HIS/PACS và chuyển đổi DICOM tự động. Sứ mệnh của chúng tôi rất đơn giản: <em>giúp bác sĩ lâm sàng đưa ra quyết định nhanh hơn, an toàn hơn cho mọi bệnh nhân</em>.",
         "story.cta": "XEM TÁC ĐỘNG",
-        "story.caption": "Kiến trúc egrams — Mô hình học sâu phân tích tín hiệu EEG đa kênh để phát hiện bất thường và tạo thông tin lâm sàng trong thời gian thực.",
+        "story.caption": "Kiến trúc EEG CDSS — Mô hình học sâu phân tích tín hiệu EEG đa kênh để phát hiện bất thường và tạo thông tin lâm sàng trong thời gian thực.",
         
         "impact.title": "Tác động",
         "impact.stat1.text": "Thời gian báo cáo — nhanh hơn tới <strong>90%</strong> so với đánh giá thủ công",
@@ -167,15 +167,15 @@ const translations = {
         "feedback.subtitle": "Được tin cậy bởi các nhà nghiên cứu AI tiên phong và chuyên gia y tế trên toàn thế giới",
         "feedback.t1.text": "\"RF-DETR: Bộ mã hóa được huấn luyện trước DINOV2 + kiến trúc DETR đa quy mô = SOTA về phát hiện đối tượng nhanh. Việc tích hợp với phân tích EEG cho thấy tiềm năng đáng kể cho các ứng dụng AI y tế.\"",
         "feedback.t1.title": "Nhà khoa học AI trưởng tại Meta",
-        "feedback.t2.text": "\"UX phù hợp là chìa khóa! Thích cách egrams đã điều chỉnh giao diện AI tiên tiến để tối đa hóa tiện ích và hiệu quả trong quy trình phân tích EEG lâm sàng.\"",
+        "feedback.t2.text": "\"UX phù hợp là chìa khóa! Thích cách EEG CDSS đã điều chỉnh giao diện AI tiên tiến để tối đa hóa tiện ích và hiệu quả trong quy trình phân tích EEG lâm sàng.\"",
         "feedback.t2.title": "Tác giả chính của Segment Anything @ Meta",
-        "feedback.t3.text": "\"Phần mềm đang ăn mòn thế giới nhưng nó vẫn chưa thể nhìn thấy thế giới. egrams là lớp thị giác cho phần mềm y tế — một phần mềm được các chuyên gia chăm sóc sức khỏe yêu thích!\"",
+        "feedback.t3.text": "\"Phần mềm đang ăn mòn thế giới nhưng nó vẫn chưa thể nhìn thấy thế giới. EEG CDSS là lớp thị giác cho phần mềm y tế — một phần mềm được các chuyên gia chăm sóc sức khỏe yêu thích!\"",
         "feedback.t3.title": "Giám đốc điều hành của Replit",
-        "feedback.t4.text": "\"Nhiều người đã nhận thấy khoảng cách giữa những gì AI có vẻ có khả năng làm trong các bản demo và những gì họ có thể nhận được trong bối cảnh thực tế. egrams thu hẹp khoảng cách đó cho các chuyên gia y tế.\"",
+        "feedback.t4.text": "\"Nhiều người đã nhận thấy khoảng cách giữa những gì AI có vẻ có khả năng làm trong các bản demo và những gì họ có thể nhận được trong bối cảnh thực tế. EEG CDSS thu hẹp khoảng cách đó cho các chuyên gia y tế.\"",
         "feedback.t4.title": "Giám đốc công nghệ của Sourcegraph",
-        "feedback.t5.text": "\"Nền tảng egrams là một nơi tốn nhiều tài nguyên để học AI cho các ứng dụng y tế. Đối với những người muốn đi sâu hơn vào thị giác máy tính và làm việc thực tế, đây là giải pháp.\"",
+        "feedback.t5.text": "\"Nền tảng EEG CDSS là một nơi tốn nhiều tài nguyên để học AI cho các ứng dụng y tế. Đối với những người muốn đi sâu hơn vào thị giác máy tính và làm việc thực tế, đây là giải pháp.\"",
         "feedback.t5.title": "Kỹ sư Học máy",
-        "feedback.t6.text": "\"Những tiến bộ công nghệ là điều cần thiết để chăm sóc sức khỏe duy trì vị thế dẫn đầu. egrams đang giúp chúng tôi nhận ra ngay giá trị từ công nghệ thị giác máy tính hiện đại trong các ứng dụng y tế.\"",
+        "feedback.t6.text": "\"Những tiến bộ công nghệ là điều cần thiết để chăm sóc sức khỏe duy trì vị thế dẫn đầu. EEG CDSS đang giúp chúng tôi nhận ra ngay giá trị từ công nghệ thị giác máy tính hiện đại trong các ứng dụng y tế.\"",
         "feedback.t6.title": "Phó Chủ tịch phụ trách, Dịch vụ Công nghệ tại BNSF",
         
         "footer.desc": "Thúc đẩy nghiên cứu não bộ thông qua AI và khoa học thần kinh",
@@ -197,6 +197,6 @@ const translations = {
         "footer.call": "Gọi: +84 33 980 2255",
         "footer.maps": "Tìm trên bản đồ",
         "footer.linkedin": "LinkedIn",
-        "footer.rights": "© 2025 egrams Egrams Co., Ltd. Bảo lưu mọi quyền."
+        "footer.rights": "© 2025 EEG CDSS Egrams Co., Ltd. Bảo lưu mọi quyền."
     }
 };
