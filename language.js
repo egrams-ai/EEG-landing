@@ -108,6 +108,7 @@ class LanguageManager {
         }
 
         this.updateToggleButton();
+        this.updateLocalizedVideos();
     }
 
     getTranslation(key) {
@@ -160,6 +161,19 @@ class LanguageManager {
                 btn.setAttribute('aria-label', 'Switch to English');
             }
         }
+    }
+
+    updateLocalizedVideos() {
+        const videos = document.querySelectorAll('[data-video-en]');
+        videos.forEach(video => {
+            const targetSrc = this.currentLang === 'vi'
+                ? video.getAttribute('data-video-vi')
+                : video.getAttribute('data-video-en');
+
+            if (targetSrc && video.getAttribute('src') !== targetSrc) {
+                video.setAttribute('src', targetSrc);
+            }
+        });
     }
 }
 
